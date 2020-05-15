@@ -1,0 +1,5 @@
+FROM reiz/nginx_proxy
+
+ADD nginx.conf /usr/local/nginx/conf/nginx.conf
+
+CMD /usr/local/nginx/sbin/nginx -g "daemon off;"
